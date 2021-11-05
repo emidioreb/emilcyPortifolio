@@ -18,10 +18,10 @@ class App extends React.Component {
       <div className="App">
         <Header />
         <Main />
-        <Search />
-        <Atendimentos />
         <Sobre />
         <Artigos />
+        <Search />
+        <Atendimentos />
         <Contatos />
       </div>
     );
