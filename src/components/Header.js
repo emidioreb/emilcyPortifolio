@@ -1,22 +1,22 @@
 import React from 'react';
 import '../css/header.css';
+import { Navbar, Container, Nav } from 'react-bootstrap';
 
-class Header extends React.Component {
-  render() {
-    return (
-      <nav>
-        <div className="nav-wrapper">
-          <a href="# " className="brand-logo left">Logo</a>
-          <ul id="nav-mobile" className="right">
-            <li><a href="início">Início</a></li>
-            <li><a href="sobre">Sobre</a></li>
-            <li><a href="artigos">Artigos</a></li>
-            <li><a href="contatos">Contatos</a></li>
-          </ul>
-        </div>
-      </nav>
-    );
-  }
+function Header() {
+  return (
+    <>
+      <Navbar bg="dark" variant="dark">
+        <Container>
+          <Navbar.Brand href="#home">Logo</Navbar.Brand>
+          <Nav className="me-auto">
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Sobre</Nav.Link>
+            <Nav.Link href="#pricing">Contatos</Nav.Link>
+          </Nav>
+        </Container>
+      </Navbar>
+    </>
+  );
 }
 
 export default Header;

@@ -7,6 +7,7 @@ class Sobre extends React.Component {
     return (
       <div>
         <div className="sobre">
+          {/* <h1 className="header red-text">Sobre</h1> */}
           <p id="sobre-text">
             <b>Médica formada pela Universidade Federal do Ceará/ UFC </b>
             em 2012, especializou-se em
