@@ -1,5 +1,4 @@
 import React from 'react';
-import emilcyFoto from '../imagens/emilcy.png';
 import '../css/sobre.css';
 
 class Sobre extends React.Component {
@@ -36,11 +35,6 @@ class Sobre extends React.Component {
           <a className="waves-effect waves-light btn" href="# ">button</a>
           <a className="waves-effect waves-light btn" href="# ">button</a>
         </div> */}
-          <div className="apresentacao">
-            <img className="materialboxed" width="350" src={emilcyFoto} alt="foto-emilcy" />
-            <div id="name">Dra. Emilcy Rebouças</div>
-            <div id="obstetra">Genecologista Obstetra</div>
-          </div>
         </div>
       </div>
     );

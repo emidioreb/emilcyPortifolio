@@ -1,17 +1,21 @@
 import React from 'react';
 import '../css/header.css';
 import { Navbar, Container, Nav } from 'react-bootstrap';
+import grafismoLaranja from '../imagens/GrafismoLaranja.png';
 
 function Header() {
   return (
     <>
-      <Navbar bg="dark" variant="dark">
+      <Navbar className="header">
         <Container>
-          <Navbar.Brand href="#home">Logo</Navbar.Brand>
+          <Navbar.Brand className="header" href="#home">
+            <img width="50" src={grafismoLaranja} alt="logo" />
+          </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">Home</Nav.Link>
-            <Nav.Link href="#features">Sobre</Nav.Link>
-            <Nav.Link href="#pricing">Contatos</Nav.Link>
+            <Nav.Link href="#home" className="header">Home</Nav.Link>
+            <Nav.Link href="#sobre" className="header">Sobre</Nav.Link>
+            <Nav.Link href="#publicações" className="header">Publicações</Nav.Link>
+            <Nav.Link href="#contatos" className="header">Contatos</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
